@@ -13,10 +13,14 @@ When we drive, we use our eyes to decide where to go. The lines on the road that
 
 To detect the lane markings, this pipeline consist of six basic steps:
 * Converting the image to grayscale.
-* Applying gaussian blur to the previous image. Parameters (kernel_size).
-* Applying canny algorithm to extract the edges Parameters (low and high threshold).
-* Generating and applying a mask of the road (area of interest) based on the image size. Parameters (Vertices coordinates).
-* Obtaining lines from the hough transform. Parameters (resolution of rho and theta, threshold, minimum line length, max line gap).
+* Applying gaussian blur to the previous image. 
+> Parameters: kernel_size
+* Applying canny algorithm to extract the edges 
+> Parameters: low and high threshold.
+* Generating and applying a mask of the road (area of interest) based on the image size. 
+> Parameters: vertices coordinates.
+* Obtaining lines from the hough transform. 
+> Parameters: resolution of rho and theta, threshold, minimum line length, max line gap.
 * Draw the lines on the edge image. This method calculates a weighted average of the lines identified as right and left lane to obtain a single like which is extrapolated over the area of interest.
 
 ### 2. Shortcomings 
