@@ -21,7 +21,7 @@ To detect the lane markings, this pipeline consist of six basic steps:
 > Parameters: vertices coordinates.
 * Obtaining lines from the hough transform. 
 > Parameters: resolution of rho and theta, threshold, minimum line length, max line gap.
-* Draw the lines on the edge image. This method calculates a weighted average of the lines identified as right and left lane to obtain a single like which is extrapolated over the area of interest.
+* Draw the lines into the image. This method calculates a weighted average of the lines identified as right and left lane to obtain a single like which is extrapolated over the area of interest.
 
 ### 2. Shortcomings 
 
